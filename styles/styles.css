@@ -1,0 +1,206 @@
+:root {
+    --fg: rgb(245, 245, 245);
+    --bg: #000;
+    --highlight: #04b118;
+}
+
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+  }
+
+body {
+    font-family: 'IBM Plex Mono', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+    font-size: 1.2em;
+    font-weight: 300;
+    letter-spacing: .01em;
+    line-height: 1.2;
+    color: var(--fg);
+  }
+
+.sun {
+    height: 80vh;
+    width: 80vh;
+    position: absolute;
+    left: -50vh;
+    top: 10vh;
+    background-color: var(--fg);
+    border-radius: 40vh;
+}
+
+.scope-view {
+    width: 30rem;
+    height: 20rem;
+    position: absolute;
+    left: 45vw;
+    top: 35vh;
+    border: .1rem solid var(--fg);
+    border-bottom-width: .3rem;
+    border-right-width: .3rem;
+    overflow: visible;
+}
+
+.target-view {
+    border: .2 rem solid var(--highlight) !important;
+}
+
+.star {
+    position: absolute;
+    background-color: var(--fg);
+    border-radius: 100%;
+}
+
+.star-with-planets {
+    outline: .1rem solid var(--highlight);
+    background-color: var(--bg);
+    border-radius: 100%;
+    position: absolute;
+}
+
+#container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    background-color: var(--bg);
+}
+
+
+
+
+.button,
+button,
+input[type='button'],
+input[type='reset'],
+input[type='submit'] {
+  font-family: inherit;
+  background-color: var(--fg);
+  color: var(--bg);
+  border: 0.1rem solid var(--fg);
+  border-radius: 0rem;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1.1rem;
+  font-weight: 400;
+  height: 3.8rem;
+  letter-spacing: normal;
+  line-height: 3.8rem;
+  padding: 0 .0rem;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  white-space: nowrap;
+  width: inherit;
+}
+
+
+.button:focus, .button:hover,
+button:focus,
+button:hover,
+input[type='button']:focus,
+input[type='button']:hover,
+input[type='reset']:focus,
+input[type='reset']:hover,
+input[type='submit']:focus,
+input[type='submit']:hover {
+  background-color: var(--highlight);
+  border-color: var(--highlight);
+  color: var(--fg);
+  outline: 0;
+}
+
+.button[disabled],
+button[disabled],
+input[type='button'][disabled],
+input[type='reset'][disabled],
+input[type='submit'][disabled] {
+  cursor: default;
+  opacity: .5;
+}
+
+.button[disabled]:focus, .button[disabled]:hover,
+button[disabled]:focus,
+button[disabled]:hover,
+input[type='button'][disabled]:focus,
+input[type='button'][disabled]:hover,
+input[type='reset'][disabled]:focus,
+input[type='reset'][disabled]:hover,
+input[type='submit'][disabled]:focus,
+input[type='submit'][disabled]:hover {
+  background-color: #ffffff;
+  border-color: #ffffff;
+}
+
+.button.button-outline,
+button.button-outline,
+input[type='button'].button-outline,
+input[type='reset'].button-outline,
+input[type='submit'].button-outline {
+  background-color: transparent;
+  color: var(--fg);
+}
+
+.button.button-outline:focus, .button.button-outline:hover,
+button.button-outline:focus,
+button.button-outline:hover,
+input[type='button'].button-outline:focus,
+input[type='button'].button-outline:hover,
+input[type='reset'].button-outline:focus,
+input[type='reset'].button-outline:hover,
+input[type='submit'].button-outline:focus,
+input[type='submit'].button-outline:hover {
+  background-color: transparent;
+  border-color: var(--highlight);
+  color: var(--highlight);
+}
+
+.button.button-outline[disabled]:focus, .button.button-outline[disabled]:hover,
+button.button-outline[disabled]:focus,
+button.button-outline[disabled]:hover,
+input[type='button'].button-outline[disabled]:focus,
+input[type='button'].button-outline[disabled]:hover,
+input[type='reset'].button-outline[disabled]:focus,
+input[type='reset'].button-outline[disabled]:hover,
+input[type='submit'].button-outline[disabled]:focus,
+input[type='submit'].button-outline[disabled]:hover {
+  border-color: inherit;
+}
+
+.button.button-clear,
+button.button-clear,
+input[type='button'].button-clear,
+input[type='reset'].button-clear,
+input[type='submit'].button-clear {
+  background-color: transparent;
+  border-color: transparent;
+  color: var(--fg);
+}
+
+.button.button-clear:focus, .button.button-clear:hover,
+button.button-clear:focus,
+button.button-clear:hover,
+input[type='button'].button-clear:focus,
+input[type='button'].button-clear:hover,
+input[type='reset'].button-clear:focus,
+input[type='reset'].button-clear:hover,
+input[type='submit'].button-clear:focus,
+input[type='submit'].button-clear:hover {
+  background-color: transparent;
+  border-color: transparent;
+  color: var(--highlight);
+}
+
+.button.button-clear[disabled]:focus, .button.button-clear[disabled]:hover,
+button.button-clear[disabled]:focus,
+button.button-clear[disabled]:hover,
+input[type='button'].button-clear[disabled]:focus,
+input[type='button'].button-clear[disabled]:hover,
+input[type='reset'].button-clear[disabled]:focus,
+input[type='reset'].button-clear[disabled]:hover,
+input[type='submit'].button-clear[disabled]:focus,
+input[type='submit'].button-clear[disabled]:hover {
+  color: #ffffff;
+}
